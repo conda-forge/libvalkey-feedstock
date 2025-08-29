@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/valkey-io/libvalkey/archive/refs/tags/${{ version }}.zip
-  sha256: "755ce070b53f8264fd1330cf5c7223a07c4dea38a715e8b5002e665cf7ff7035"
+  sha256: "70a114376edf0a6756de26244f2688f577532697af4cc579d58f89175a952d23"
 
 build:
   number: 0
