@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libvalkey
-  version: "0.2.1"
+  version: "0.3.0"
 
 package:
   name: "${{ name }}"
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/valkey-io/libvalkey/archive/refs/tags/${{ version }}.zip
-  sha256: "70a114376edf0a6756de26244f2688f577532697af4cc579d58f89175a952d23"
+  sha256: "eec530567dc3c19bc7f4f4fdccb3a4b5787f2cdabe4fdb9df644ae67a42dcd25"
 
 build:
-  number: 3
+  number: 0
   script:
     content:
       - if: linux
