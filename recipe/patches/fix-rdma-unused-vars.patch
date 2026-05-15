@@ -1,0 +1,14 @@
+--- a/src/rdma.c
++++ b/src/rdma.c
+@@ -1035,8 +1035,9 @@
+ 
+ static int valkeyRdmaWaitConn(valkeyContext *c, long timeout) {
+     long now, end;
+-    RdmaContext *ctx = c->privctx;
+-    struct epoll_event events[1], *event;
++    VALKEY_UNUSED RdmaContext *ctx = c->privctx;
++    struct epoll_event events[1];
++    VALKEY_UNUSED struct epoll_event *event;
+     int nevent;
+ 
+     assert(timeout >= 0);
