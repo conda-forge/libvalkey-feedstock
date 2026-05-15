@@ -11,6 +11,8 @@ package:
 source:
   url: https://github.com/valkey-io/libvalkey/archive/refs/tags/${{ version }}.zip
   sha256: "0131d392fe6ff2d858d16004a1af275863177228fc6c385d678e7e31a8194e14"
+  patches:
+    - patches/fix-rdma-unused-vars.patch
 
 build:
   number: 0
